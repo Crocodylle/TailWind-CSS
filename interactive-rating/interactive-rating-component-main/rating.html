@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { 
+       theme: { 
+         extend: {
+            colors: { 
+              blue: { 
+               Dark: 'hsl(213, 19%, 18%)',
+               VeryDark: 'hsl(216, 12%, 8%)'                
+              },
+             laranja: { 
+               botao: 'hsl(25, 97%, 53%)'
+             },
+             grey: { 
+                 Light: 'hsl(217, 12%, 63%)',
+                 Medium: 'hsl(216, 12%, 54%)'
+             },
+            },
+         }
+       }
+      }
+ 
+    </script>
+    <title>Thank You</title>
+</head>
+<body>
+    <body class="my-20 bg-blue-VeryDark" >
+        <div class=" bg-blue-Dark text-center w-5/6 rounded-xl m-auto py-5 px-3 sm:w-3/6 md:w-2/6 lg:w-2/5" >
+          <!-- Rating state start -->
+           <div class=" grid grid-rows-1 justify-center w-50  ">
+             <img class="pt-3 pl-3" src="./images/illustration-thank-you.svg" alt="">
+               <div class="bg-blue-VeryDark  w-6/6 p-5 mt-4 pt-1 h-2 rounded-full ">
+                  <p class="text-sm text-laranja-botao font-bold">You selected 4 out of 5</p>
+               </div>
+          </div>
+        
+           <h1 class="text-2xl font-bold m-5 text-white ">Thank you!?</h1>
+           <p class="text-grey-Medium mx-4 mb-5 ">We appreciate you taking the time to give a rating. if you ever need more 
+            support, don't hesitate to get in touch!</p>
+        </div>           
+    </body>
+</html>

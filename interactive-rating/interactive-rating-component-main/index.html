@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+   <script>
+     tailwind.config = { 
+      theme: { 
+        extend: {
+           colors: { 
+             blue: { 
+              Dark: 'hsl(213, 19%, 18%)',
+              VeryDark: 'hsl(216, 12%, 8%)'                
+             },
+            laranja: { 
+              botao: 'hsl(25, 97%, 53%)'
+            },
+            grey: { 
+                Light: 'hsl(217, 12%, 63%)',
+                Medium: 'hsl(216, 12%, 54%)'
+            },
+           },
+        }
+      }
+     }
+
+   </script>
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  
+</head>
+<body class="my-20 bg-blue-VeryDark" >
+<div class="bg-blue-Dark pt-4 pr-4  w-5/6 rounded-xl m-auto  sm:w-3/6 md:w-2/6 lg:w-2/5">
+  <!-- Rating state start -->
+   <div class=" bg-grey-Medium w-10 h-10 m-4 rounded-full">
+     <img class="pt-3 pl-3" src="./images/icon-star.svg" alt="">
+   </div>
+   <h1 class="text-2xl font-bold m-5 text-white">How did we do?</h1>
+
+   <p class="text-grey-Medium mx-4">Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+   
+ <!-- <ul class="flex ">
+  <li class="bg-blue-VeryDark w-10 h-10 p-5 m-3 text-grey-Medium rounded-full">1</li>
+  <li class="bg-blue-VeryDark w-10 h-10 p-5 m-3 text-grey-Medium rounded-full">2</li>
+  <li class="bg-blue-VeryDark w-10 h-10 p-5 m-3 text-grey-Medium rounded-full">3</li>
+  <li class="bg-blue-VeryDark w-10 h-10 p-5 m-3 text-grey-Medium rounded-full">4</li>
+  <li class="bg-blue-VeryDark w-10 h-10 p-5 m-3 text-grey-Medium rounded-full">5</li>
+ </ul>
+  -->
+ 
+ 
+  <div class="flex">
+    <div class="bg-blue-VeryDark w-10 h-10 p-5 m-3 text-grey-Medium rounded-full hover:bg-laranja-botao">
+      <p class="">1</p>
+    </div>
+    <div class="bg-blue-VeryDark w-10 h-10 p-5 m-3 text-grey-Medium rounded-full">
+      <button class="">2</button>
+    </div>
+    <div class="bg-blue-VeryDark w-10 h-10 p-5 m-3 text-grey-Medium rounded-full">
+      <button class="">3</button>
+    </div>
+    <div class="bg-blue-VeryDark w-10 h-10 p-5 m-3 text-grey-Medium rounded-full">
+      <button class="">4</button>
+    </div>
+    <div class="bg-blue-VeryDark w-10 h-10 p-5 m-3 text-grey-Medium rounded-full">
+      <button class="">5</button>
+    </div>
+  </div>
+ 
+
+  <button class="bg-laranja-botao w-full py-3 mx-2 mt-3 mb-10 rounded-full text-white self-center hover:bg-white hover:text-laranja-botao  hover:duration-700">Submit</button> 
+</div>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+ 
+  
+<!--   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rodrigo Matias</a>.
+  </div> -->
+</body>
+</html>
